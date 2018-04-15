@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- parallel="methods" To Execute the classess Parallel -->
+<suite name="Suite"  >
+  <test name="Test">
+	
+    <classes>
+       <class name="soFi.TMDB.Api.TestSuite1.TestCases.TS01_TC01_Authencation_CreateTestToken_Get_With_Valid_Key"/>
+       <class name="soFi.TMDB.Api.TestSuite1.TestCases.TS01_TC02_Authencation_CreateTestToken_Get_With_invalid_Key"/>
+       <class name="soFi.TMDB.Api.TestSuite1.TestCases.TS01_TC03_Authencation_CreateTestToken_Get_With_invalid_Resource"/>
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

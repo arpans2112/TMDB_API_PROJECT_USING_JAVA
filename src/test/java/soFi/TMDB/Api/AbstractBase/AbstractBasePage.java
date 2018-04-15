@@ -1,12 +1,16 @@
 package soFi.TMDB.Api.AbstractBase;
-import static com.jayway.restassured.RestAssured.when;
+
 
 import java.util.Hashtable;
 
+import org.apache.poi.xssf.model.ThemesTable.ThemeElement;
 import org.testng.Assert;
+import static com.jayway.restassured.RestAssured.*;
 
 import com.jayway.restassured.response.Response;
+import com.jayway.restassured.response.ValidatableResponse;
 
+import groovyjarjarantlr.collections.impl.Vector;
 import soFi.TMDB.Api.Utilities.TestUtil;
 import soFi.TMDB.Api.Utilities.Xls_Reader;
 
@@ -17,7 +21,9 @@ public class AbstractBasePage {
  public   Xls_Reader TestData = null;
  public   Hashtable<String , String> TestDataTable = null;
  public   TestUtil testutil = null;
+ public   ValidatableResponse validatableResponse = null;
  public   Response response = null;
+ public   Vector vector =  null;
 
 
 
@@ -33,6 +39,8 @@ public class AbstractBasePage {
   
 
   /****************************************************************************REST ASSURED API Methods ***********************************************************************/ 
+     
+  
   
         //Validate the expected getStatuCode with the actual get status of the response passed to the method
         public void validategetStatusCode(Response response , String expectedgetstatusCode){

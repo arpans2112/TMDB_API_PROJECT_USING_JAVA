@@ -1,11 +1,8 @@
 package soFi.TMDB.Api.Authentication.Pages;
 
-import static com.jayway.restassured.RestAssured.when;
-
 import java.util.Hashtable;
 
-import org.testng.internal.TestMethodWithDataProviderMethodWorker;
-
+import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 
 import soFi.TMDB.Api.AbstractBase.AbstractBasePage;
@@ -25,22 +22,30 @@ public class CreateRequestTokenFunctionPage extends AbstractBasePage{
 
 
 
-	public static String request_token = "JSON_PATH=request_token";
-	public static String expires_at = "JSON_PATH=expires_at";
-	public static String success = "JSON_PATH=success";
+	public static String request_token = "request_token";
+	public static String expires_at = "expires_at";
+	public static String success = "success";
+	public static String status_message = "status_message";
+	public static String status_code = "status_code";
 
-	public  String urlCreateRequestToken(){
-
-		return PropertyFileReader.configpropertyReader("AuthenticationEndPoint") + createRequestTokenResource;
-	}
+		public  String urlCreateRequestToken(){
+	
+			return PropertyFileReader.configpropertyReader("AuthenticationEndPoint") + createRequestTokenResource;
+		}
 
 
 	
 
 	
-      public void  verifySuccess(Response response , String expectedSuccessMessage){
+      public void  VerifySuccess(Response response , String expectedSuccessMessage){
     	  
-    	  
+    	            String actualvalue = response.
+    	        		                 then().
+    	        		                 contentType(ContentType.JSON).
+    	                                 extract().
+    	                                 path(success);
+    	                                 
+    	          System.out.println("Actual success: " + actualvalue);
     	  
       }
 

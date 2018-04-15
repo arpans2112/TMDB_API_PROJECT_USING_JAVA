@@ -28,6 +28,15 @@ public class AuthenticationTestDataProvider extends AbstractBaseTestCase{
 		return testutil.getTestData(AccessTestDataFile(testDataInputExcel), sheetName, testDataRowName);
 	}
 	
+	@DataProvider
+	public  Object[][] TS01_TC03_Authencation_CreateTestToken_Get_With_invalid_Resource_TestData(){
+		
+		final String testDataInputExcel=  Config.TestDataFileLocation + "Authentication_TestData.xlsx";
+		final String sheetName = "Authentication_TestData";
+		final String testDataRowName = "TS01_TC03_Authencation_CreateTestToken_Get_With_invalid_Resource_TestData";		
+		return testutil.getTestData(AccessTestDataFile(testDataInputExcel), sheetName, testDataRowName);
+	}
+	
 	
 
 }

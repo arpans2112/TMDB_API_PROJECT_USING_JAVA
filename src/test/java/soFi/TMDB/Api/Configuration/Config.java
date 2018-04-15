@@ -12,7 +12,10 @@ public class Config {
 
 	//InputFile Location
 	public static final String TestDataFileLocation = System.getProperty("user.dir") + "\\src\\test\\java\\soFi\\TMDB\\Api\\InputData\\";
+ 
+	//EntenReport Folder
+	public static final String extentReportLocation = System.getProperty("user.dir") + "\\ExtenReport\\";
 
-
-
+	//ReportConfigXMLLocation
+	public static final String extentReportConfigXmlLocation = System.getProperty("user.dir") + "\\ReportsConfig.xml";
 }
