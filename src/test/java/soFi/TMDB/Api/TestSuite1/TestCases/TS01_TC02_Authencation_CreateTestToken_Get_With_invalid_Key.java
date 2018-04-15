@@ -4,6 +4,8 @@ import java.util.Hashtable;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.jayway.restassured.http.ContentType;
+import com.relevantcodes.extentreports.LogStatus;
+
 import static com.jayway.restassured.RestAssured.*;
 import soFi.TMDB.Api.AbstractBase.AbstractBaseTestCase;
 import soFi.TMDB.Api.Authentication.Pages.CreateRequestTokenFunctionPage;
@@ -19,9 +21,9 @@ public class TS01_TC02_Authencation_CreateTestToken_Get_With_invalid_Key extends
 	public void tS01_TC02_Authencation_CreateTestToken_Get_With_invalid_Key(Hashtable<String, String> TestDataTable){
 		
 		TestLog = extent.startTest(TestDataTable.get("TestCaseName"));
-		  
+		 TestLog.log(LogStatus.INFO,  testLogTestCaseDescriptionString("Test Case Description : " + TestDataTable.get("TestCaseDescription")) );  
 		
-		createRequestTokenFunctionPage = new CreateRequestTokenFunctionPage(TestDataTable);
+		createRequestTokenFunctionPage = new CreateRequestTokenFunctionPage(TestDataTable , TestLog);
 		//Step 1 : Get Create Request Token API  URL that includes End point and Resource
 		String createReequestTokenURL = createRequestTokenFunctionPage.urlCreateRequestToken();
 		
@@ -46,13 +48,16 @@ public class TS01_TC02_Authencation_CreateTestToken_Get_With_invalid_Key extends
 	
 		
 		//Step4: Validate getStatusCode is : 401
-		Assert.assertEquals(actualgetstatusCode, TestDataTable.get("getStatusCode"));
+		 Assert.assertTrue(createRequestTokenFunctionPage.verifyActionMessage(actualgetstatusCode, TestDataTable.get("getStatusCode"),"getStatusCode"));
+		//Assert.assertEquals(actualgetstatusCode, TestDataTable.get("getStatusCode"));
 		
 		//Step5: Validate status_code	
-		Assert.assertEquals(actualstatus_code, TestDataTable.get("status_code"));
+		Assert.assertTrue(createRequestTokenFunctionPage.verifyActionMessage(actualstatus_code, TestDataTable.get("status_code"),"status_code"));
+		//Assert.assertEquals(actualstatus_code, TestDataTable.get("status_code"));
 		
 		//Step5: Validate status_Message
-		Assert.assertEquals(actualstatus_message, TestDataTable.get("status_message"));
+		Assert.assertTrue(createRequestTokenFunctionPage.verifyActionMessage(actualstatus_message, TestDataTable.get("status_message"),"status_message"));
+		//Assert.assertEquals(actualstatus_message, TestDataTable.get("status_message"));
 	}
 
 }

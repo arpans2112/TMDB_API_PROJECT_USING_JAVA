@@ -23,7 +23,7 @@ public class TS01_TC01_Authencation_CreateTestToken_Get_With_Valid_Key_Test exte
 		//Step 2:  Get Method Call
 		  
 		
-		createRequestTokenFunctionPage = new CreateRequestTokenFunctionPage(TestDataTable);
+		createRequestTokenFunctionPage = new CreateRequestTokenFunctionPage(TestDataTable , TestLog);
 		//Step 1 : Get Create Request Token API  URL that includes End point and Resource
 		String createReequestTokenURL = createRequestTokenFunctionPage.urlCreateRequestToken();
 		

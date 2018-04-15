@@ -42,6 +42,7 @@ public class AbstractBaseTestCase {
 	
 
 	 public  String TestCaseName = null;
+	 public String classname = null;
 	 
 	
 	 
@@ -74,7 +75,7 @@ public class AbstractBaseTestCase {
 	@BeforeMethod
     	public  void  beforemethod(Method method ){
 		
-	    String classname = getClass().getSimpleName();
+	     classname = getClass().getSimpleName();
  	    String methodName = method.getName();
 		System.out.println("Class Name : " + classname + " Method Name: " + methodName);
 		
@@ -89,19 +90,20 @@ public class AbstractBaseTestCase {
 		//Extent Report Status 
 		if (result.getStatus() == ITestResult.FAILURE){
 		     System.out.println(" [Test Case Name = " + result.getName() + " ] " + " [ Status = Failed ]");
-			TestLog.log(LogStatus.FAIL,   result.getName() + " Failed " );
+			TestLog.log(LogStatus.FAIL, testLogTestCaseDescriptionString(classname + " Failed "));
+			
 			TestLog.log(LogStatus.FAIL, result.getThrowable());
 		
 		} else if (result.getStatus() == ITestResult.SKIP){
         	
 			System.out.println(" [Test Case Name = " + result.getName() + " ] " + " [ Status = Skipped ]");
-        	TestLog.log(LogStatus.SKIP, result.getName() + " Skipped ");
+        	TestLog.log(LogStatus.SKIP, testLogTestCaseDescriptionString(classname + " Skipped "));
         	TestLog.log(LogStatus.SKIP, result.getThrowable());
         	
         }else if(result.getStatus() == ITestResult.SUCCESS){
         	
         	System.out.println(" [Test Case Name = " + result.getName() + " ] " + " [ Status = PASSED ]");
-        	TestLog.log(LogStatus.PASS, result.getName() + " PASSED ");
+        	TestLog.log(LogStatus.PASS, testLogTestCaseDescriptionString(classname + " PASSED "));
         	
         	
         }

@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.jayway.restassured.http.ContentType;
-
+import com.relevantcodes.extentreports.LogStatus;
 
 import static com.jayway.restassured.RestAssured.*;
 import soFi.TMDB.Api.AbstractBase.AbstractBaseTestCase;
@@ -24,8 +24,8 @@ public class TS01_TC01_Authencation_CreateTestToken_Get_With_Valid_Key extends A
 	public void tS01_TC01_Authencation_CreateTestToken_Get(Hashtable<String, String> TestDataTable){
 		  
 		 TestLog = extent.startTest(TestDataTable.get("TestCaseName"));
-		
-		createRequestTokenFunctionPage = new CreateRequestTokenFunctionPage(TestDataTable);
+		 TestLog.log(LogStatus.INFO,  testLogTestCaseDescriptionString("Test Case Description : " + TestDataTable.get("TestCaseDescription")) );
+		createRequestTokenFunctionPage = new CreateRequestTokenFunctionPage(TestDataTable , TestLog);
 		//Step 1 : Get Create Request Token API  URL that includes End point and Resource
 		String createReequestTokenURL = createRequestTokenFunctionPage.urlCreateRequestToken();
 		
@@ -49,10 +49,11 @@ public class TS01_TC01_Authencation_CreateTestToken_Get_With_Valid_Key extends A
 		
 		
 		//Step3: Validate Success message is True
-		Assert.assertEquals(actualsuccess, TestDataTable.get("success"));
-		
+	//	Assert.assertEquals(actual success, TestDataTable.get("success"));
+		Assert.assertTrue(createRequestTokenFunctionPage.verifyActionMessage(actualsuccess, TestDataTable.get("success"),"success"));
 		//Step4: Validate getStatusCode
-		Assert.assertEquals(actualgetStatusCodestr, TestDataTable.get("getStatusCode"));
+		Assert.assertTrue(createRequestTokenFunctionPage.verifyActionMessage(actualgetStatusCodestr, TestDataTable.get("getStatusCode"), "getStatusCode"));
+	//	Assert.assertEquals(actualgetStatusCodestr, TestDataTable.get("getStatusCode"));
 		
 		  	
 		

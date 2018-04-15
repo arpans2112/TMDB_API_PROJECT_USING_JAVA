@@ -18,4 +18,10 @@ public class Config {
 
 	//ReportConfigXMLLocation
 	public static final String extentReportConfigXmlLocation = System.getProperty("user.dir") + "\\ReportsConfig.xml";
+
+	public static final String RedColour = "red";
+	public static final String GreenColour = "green";
+	public static final String blueColour = "blue";
+	
+
 }

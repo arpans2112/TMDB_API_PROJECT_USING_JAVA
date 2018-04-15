@@ -4,6 +4,7 @@ import java.util.Hashtable;
 
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import soFi.TMDB.Api.AbstractBase.AbstractBasePage;
 import soFi.TMDB.Api.Utilities.PropertyFileReader;
@@ -14,8 +15,8 @@ public class CreateRequestTokenFunctionPage extends AbstractBasePage{
 	public static String createRequestTokenendpoint = null;
 	public static String CreateRequestTokenUrl=null;
 
-	public CreateRequestTokenFunctionPage(Hashtable<String, String> TestDataTable)  {
-		super(TestDataTable);
+	public CreateRequestTokenFunctionPage(Hashtable<String, String> TestDataTable , ExtentTest TestLog )  {
+		super(TestDataTable, TestLog);
 
 		// TODO Auto-generated constructor stub
 	}
