@@ -33,11 +33,47 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/poi-3.15.jar"/>
-	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/poi-examples-3.15.jar"/>
-	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/poi-excelant-3.15.jar"/>
-	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/poi-ooxml-3.15.jar"/>
-	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/poi-ooxml-schemas-3.15.jar"/>
-	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/poi-scratchpad-3.15.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/extentreports-2.41.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/extentreports-2.41.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/guice-3.0-no_aop.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/httpclient-4.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/httpcore-4.4.3.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/httpmime-4.5.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/mongo-java-driver-2.10.1.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/ojdbc14-10.2.0.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/phantomjsdriver-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/poi-3.15.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/poi-examples-3.15.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/poi-excelant-3.15.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/poi-ooxml-3.15.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/poi-ooxml-schemas-3.15.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/poi-scratchpad-3.15.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/selenium-java-2.53.1.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/selenium-java-2.53.1-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/selenium-server-standalone-2.53.1.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/testng-6.8.5.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/testng-6.8.5-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

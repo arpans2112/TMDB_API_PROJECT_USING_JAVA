@@ -630,7 +630,7 @@ public class Xls_Reader {
 		
 	}
 		
-	// to run this on stand alone
+/*	// to run this on stand alone
 	public static void main(String arg[]) throws IOException{
 		
 		//System.out.println(filename);
@@ -642,6 +642,6 @@ public class Xls_Reader {
 					System.out.println(datatable.getCellData("TC5", col, 1));
 				}
 	}
-	
+	*/
 	
 }

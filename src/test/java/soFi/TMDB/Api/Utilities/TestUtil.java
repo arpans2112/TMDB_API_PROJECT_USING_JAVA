@@ -149,6 +149,7 @@ public class TestUtil {
 					System.out.print( " [ " + TestData.getCellData(SheetName, colnum, KeyRowIndex) + " = " +  TestData.getCellData(SheetName, colnum, rowNum)  + " ] --");
 				}
 				
+				System.out.println();
 				data[rowNum-DataRowIndex][0] = table;
 			}
 			
