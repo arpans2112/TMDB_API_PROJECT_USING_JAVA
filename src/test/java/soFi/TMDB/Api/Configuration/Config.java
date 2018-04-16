@@ -2,12 +2,14 @@ package soFi.TMDB.Api.Configuration;
 
 public class Config {
 
+   //Run Time Variables
+	public static String request_token = null;
 
-
+	
 	//Environment Config file Variables
 	public static final String environmentFileName = "TMDB_API_QA_Environment.properties";    
 	public static final String environmentFileLocationProperty= System.getProperty("user.dir") + "\\src\\test\\java\\soFi\\TMDB\\Api\\Configuration\\" + environmentFileName;
-
+    
 
 
 	//InputFile Location

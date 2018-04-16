@@ -1,22 +1,16 @@
 package soFi.TMDB.Api.AbstractBase;
 
 
-import java.util.Hashtable;
-
-import org.apache.poi.xssf.model.ThemesTable.ThemeElement;
+import java.util.Hashtable; 
 import org.testng.Assert;
-import static com.jayway.restassured.RestAssured.*;
-
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.response.ValidatableResponse;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-import groovyjarjarantlr.collections.impl.Vector;
 import soFi.TMDB.Api.Configuration.Config;
 import soFi.TMDB.Api.Utilities.TestUtil;
 import soFi.TMDB.Api.Utilities.Xls_Reader;
-
+ 
 
 public class AbstractBasePage {
 

@@ -8,6 +8,6 @@ public class SampleTest {
 	public void helloMethod(){
 		
 		
-		System.out.println("Hi Testing Hello Word");
+		System.out.println("Hello!! TMDB Api Java Project");
 	}
 }

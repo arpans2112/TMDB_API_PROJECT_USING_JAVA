@@ -2,7 +2,7 @@ package soFi.TMDB.Api.AbstractBase;
 
 
 
-import java.lang.reflect.Method;
+import java.lang.reflect.Method; 
 import java.util.Hashtable;
 import org.testng.ITestResult;
 import org.testng.SkipException;
@@ -14,13 +14,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import static com.jayway.restassured.RestAssured.*;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.response.ValidatableResponse;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import soFi.TMDB.Api.Utilities.ExtentManager;
 import soFi.TMDB.Api.Utilities.TestUtil;
 import soFi.TMDB.Api.Utilities.Xls_Reader;
@@ -43,7 +41,7 @@ public class AbstractBaseTestCase {
 
 	 public  String TestCaseName = null;
 	 public String classname = null;
-	 
+	 public String methodName = null;
 	
 	 
    @BeforeSuite
@@ -76,7 +74,7 @@ public class AbstractBaseTestCase {
     	public  void  beforemethod(Method method ){
 		
 	     classname = getClass().getSimpleName();
- 	    String methodName = method.getName();
+ 	     methodName = method.getName();
 		System.out.println("Class Name : " + classname + " Method Name: " + methodName);
 		
 		
@@ -90,20 +88,20 @@ public class AbstractBaseTestCase {
 		//Extent Report Status 
 		if (result.getStatus() == ITestResult.FAILURE){
 		     System.out.println(" [Test Case Name = " + result.getName() + " ] " + " [ Status = Failed ]");
-			TestLog.log(LogStatus.FAIL, testLogTestCaseDescriptionString(classname + " Failed "));
+			TestLog.log(LogStatus.FAIL, testLogTestCaseDescriptionString(methodName + " Failed "));
 			
 			TestLog.log(LogStatus.FAIL, result.getThrowable());
 		
 		} else if (result.getStatus() == ITestResult.SKIP){
         	
 			System.out.println(" [Test Case Name = " + result.getName() + " ] " + " [ Status = Skipped ]");
-        	TestLog.log(LogStatus.SKIP, testLogTestCaseDescriptionString(classname + " Skipped "));
+        	TestLog.log(LogStatus.SKIP, testLogTestCaseDescriptionString(methodName + " Skipped "));
         	TestLog.log(LogStatus.SKIP, result.getThrowable());
         	
         }else if(result.getStatus() == ITestResult.SUCCESS){
         	
         	System.out.println(" [Test Case Name = " + result.getName() + " ] " + " [ Status = PASSED ]");
-        	TestLog.log(LogStatus.PASS, testLogTestCaseDescriptionString(classname + " PASSED "));
+        	TestLog.log(LogStatus.PASS, testLogTestCaseDescriptionString(methodName + " Passed "));
         	
         	
         }
@@ -208,9 +206,16 @@ public class AbstractBaseTestCase {
     			
     				public String testLogTestCaseDescriptionString(String Message){
     					
-    					return "<p><span style='font-weight:bold; color:yellow; font-size:150%'>" + Message + "</span></p>" ;
     					
-    				}
+    					if(Message.contains("Failed"))
+    						return "<p><span style='font-weight:bold; color:red; font-size:150%'>" + Message + "</span></p>" ;
+    					else if(Message.contains("Skipped"))
+    						return "<p><span style='font-weight:bold; color:yellow; font-size:150%'>" + Message + "</span></p>" ;
+    					else 
+        					return "<p><span style='font-weight:bold; color:green; font-size:150%'>" + Message + "</span></p>" ;
+    					}
+    					
+
     				
     				
     				 public String testLogActionMessageString(String Message , String Color){

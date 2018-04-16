@@ -1,10 +1,17 @@
 package soFi.TMDB.Api.Test;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.Properties;
 
+import org.apache.commons.configuration2.PropertiesConfiguration;
+import org.apache.commons.configuration2.PropertiesConfigurationLayout;
+import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.testng.annotations.Test;
 import soFi.TMDB.Api.Configuration.Config;
 
@@ -13,15 +20,28 @@ public class HowToWritePropertyFile {
 	@Test
 	public void writePropertyFile() throws IOException{
 		
-               
+	   
 		
 				System.out.println(Config.environmentFileLocationProperty);
-				File f = new File(Config.environmentFileLocationProperty);
-		        Properties properties = new Properties();
-		        FileOutputStream fos = new FileOutputStream(f);
-		        properties.setProperty("EnvironmentURL", "https:www.facebook.com");
-		        properties.setProperty("SystemUser", "Arpan Saini");
+		  	String path = Config.environmentFileLocationProperty;
+		    	
+		    	FileInputStream in = new FileInputStream(path);
+		    	Properties props = new Properties();
+		    	props.load(in);
+		    	in.close();
 		     
+		    	props.setProperty("request_token", "https:www.facebook.com");
+		       // properties.replace("request_token", "https:www.facebook.com");
+		   
+		       
+		       // FileWriter writer = new FileWriter(f);
+		        FileOutputStream fileOutputStream = new FileOutputStream(path);
+		        props.store(fileOutputStream, "Storing values");
+		        fileOutputStream.close();
+		        
+		    	
+		    	
+		    	
 	}
 
 }

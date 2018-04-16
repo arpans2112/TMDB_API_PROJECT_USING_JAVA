@@ -1,5 +1,10 @@
 package soFi.TMDB.Api.TestSuite1.TestCases;
 
+/*
+ * Author : Arpan Saini
+ * Test Case Description: Validate the Response with InValid Resource. 
+ * */
+
 import java.util.Hashtable;
 import org.testng.Assert;
 import org.testng.annotations.Test;

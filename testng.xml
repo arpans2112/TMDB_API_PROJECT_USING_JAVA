@@ -6,10 +6,14 @@
 	
     <classes>
       
-   
+       <class name="soFi.TMDB.Api.TestSuite1.TestCases.TS01_TC05_Authentication_CreateSessionWithLogin_Get_With_Valid_Key"/>
+       <class name="soFi.TMDB.Api.TestSuite1.TestCases.TS01_TC04_Authencation_Create_Session_Get_With_Valid_Api_key"/>
        <class name="soFi.TMDB.Api.TestSuite1.TestCases.TS01_TC03_Authencation_CreateTestToken_Get_With_invalid_Resource"/>
        <class name="soFi.TMDB.Api.TestSuite1.TestCases.TS01_TC02_Authencation_CreateTestToken_Get_With_invalid_Key"/>
        <class name="soFi.TMDB.Api.TestSuite1.TestCases.TS01_TC01_Authencation_CreateTestToken_Get_With_Valid_Key"/>
+       
+        
+       
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

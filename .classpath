@@ -75,5 +75,10 @@
 	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/testng-6.8.5.jar"/>
 	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/testng-6.8.5-sources.jar"/>
 	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/PrpertyFile/commons-configuration2-2.2.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/PrpertyFile/commons-configuration2-2.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/PrpertyFile/commons-configuration2-2.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/PrpertyFile/commons-configuration2-2.2-tests.jar"/>
+	<classpathentry kind="lib" path="D:/Companies Preparations/SoFi_TMDB_API_PROJECT_USING_JAVA/SoFi_TMDB_Api_Java_Project/JarFiles/TMDB_API_JARS/PrpertyFile/commons-configuration2-2.2-test-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
