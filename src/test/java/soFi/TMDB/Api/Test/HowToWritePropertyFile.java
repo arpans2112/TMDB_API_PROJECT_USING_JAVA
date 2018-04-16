@@ -1,17 +1,9 @@
 package soFi.TMDB.Api.Test;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.Properties;
-
-import org.apache.commons.configuration2.PropertiesConfiguration;
-import org.apache.commons.configuration2.PropertiesConfigurationLayout;
-import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.testng.annotations.Test;
 import soFi.TMDB.Api.Configuration.Config;
 
@@ -23,7 +15,7 @@ public class HowToWritePropertyFile {
 	   
 		
 				System.out.println(Config.environmentFileLocationProperty);
-		  	String path = Config.environmentFileLocationProperty;
+		  	    String path = Config.environmentFileLocationProperty;
 		    	
 		    	FileInputStream in = new FileInputStream(path);
 		    	Properties props = new Properties();
